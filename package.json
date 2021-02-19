@@ -1,0 +1,23 @@
+{
+  "name": "nodejs_mongodb_blogsite",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/derrick-evltfmr/nodejs_mongodb_blogsite.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/derrick-evltfmr/nodejs_mongodb_blogsite/issues"
+  },
+  "homepage": "https://github.com/derrick-evltfmr/nodejs_mongodb_blogsite#readme"
+}
