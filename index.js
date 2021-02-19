@@ -1,7 +1,10 @@
 const http = require('http')
 const fs = require('fs')
 
-const aboutPage = fs.readFileSync('about.html')
+// synchronous means blocking code
+// so that we can make sure that the pages are read before
+// the server respond
+const aboutPage = fs.readFileSync('about.html') 
 const contactPage = fs.readFileSync('contact.html')
 const homePage = fs.readFileSync('index.html')
 
