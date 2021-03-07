@@ -10,7 +10,7 @@ app.get('/', (req, res) => {
     res.sendFile(path.resolve(__dirname, 'pages/index.html'))
 })
 
-app.get('/index.html', (req, res) => {
+app.get('/home', (req, res) => {
     res.sendFile(path.resolve(__dirname, 'pages/index.html'))
 })
 
@@ -20,8 +20,16 @@ app.get('/about', (req, res) => {
     res.sendFile(path.resolve(__dirname, 'pages/about.html'))
 })
 
-app.get('/about.html', (req, res) => {
-    res.sendFile(path.resolve(__dirname, 'pages/about.html'))
+
+// Post Page
+app.get('/post', (req, res) => {
+    res.sendFile(path.resolve(__dirname, 'pages/post.html'))
+})
+
+
+// Contact Page
+app.get('/contact', (req, res) => {
+    res.sendFile(path.resolve(__dirname, 'pages/contact.html'))
 })
 
 
