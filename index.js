@@ -6,13 +6,13 @@ const app = express()
 app.use(express.static('public'))
 
 // Home Page
-app.get('/', (req, res) => {
+var homePage = function(req,res) {
     res.sendFile(path.resolve(__dirname, 'pages/index.html'))
-})
+}
 
-app.get('/home', (req, res) => {
-    res.sendFile(path.resolve(__dirname, 'pages/index.html'))
-})
+/* homePage is a var which stores the function but not the function itself, so it's not homePage() */
+app.get('/', homePage)     
+app.get('/home', homePage)
 
 
 // About Page
