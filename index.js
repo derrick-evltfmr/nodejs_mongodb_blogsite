@@ -23,19 +23,22 @@ app.get('/home', homePage)
 
 // About Page
 app.get('/about', (req, res) => {
-    res.sendFile(path.resolve(__dirname, 'pages/about.html'))
+    // res.sendFile(path.resolve(__dirname, 'pages/about.html'))
+    res.render('about')
 })
 
 
 // Post Page
 app.get('/post', (req, res) => {
-    res.sendFile(path.resolve(__dirname, 'pages/post.html'))
+    // res.sendFile(path.resolve(__dirname, 'pages/post.html'))
+    res.render('post')
 })
 
 
 // Contact Page
 app.get('/contact', (req, res) => {
-    res.sendFile(path.resolve(__dirname, 'pages/contact.html'))
+    // res.sendFile(path.resolve(__dirname, 'pages/contact.html'))
+    res.render('contact')
 })
 
 
