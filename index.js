@@ -1,9 +1,13 @@
 const express = require('express')
+const expressEdge = require('express-edge')
 const path = require('path')
 
 const app = express()
 
 app.use(express.static('public'))
+app.use(expressEdge.engine)
+
+app.set('views',`${__dirname}/views`)
 
 // Home Page
 var homePage = function(req,res) {
