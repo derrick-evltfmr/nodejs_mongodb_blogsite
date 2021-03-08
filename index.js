@@ -7,11 +7,13 @@ const app = express()
 app.use(express.static('public'))
 app.use(expressEdge.engine)
 
-app.set('views',`${__dirname}/views`)
+//app.set('views',`${__dirname}/views`)
+app.set('views', path.join(__dirname, 'views'))
 
 // Home Page
 var homePage = function(req,res) {
-    res.sendFile(path.resolve(__dirname, 'pages/index.html'))
+    //res.sendFile(path.resolve(__dirname, 'pages/index.html'))
+    res.render('index')
 }
 
 /* homePage is a var which stores the function but not the function itself, so it's not homePage() */
